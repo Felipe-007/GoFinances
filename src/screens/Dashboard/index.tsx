@@ -1,11 +1,20 @@
-import { Container, Title } from "./styles";
+import { Container, Header, UserInfo, Photo, User, UserGreetings, UserName, UserWrapper } from "./styles";
 
 export default function Dashboard() {
   return (
     <Container>
-      <Title>
-        Dashboard
-      </Title>
+      <Header>
+        <UserWrapper>
+          <UserInfo>
+            <Photo source={{ uri: 'https://avatars.githubusercontent.com/u/83180302?v=4' }} />
+
+            <User>
+              <UserGreetings>Olá, </UserGreetings>
+              <UserName>Felipe</UserName>
+            </User>
+          </UserInfo>
+        </UserWrapper>
+      </Header>
     </Container>
   )
 }
