@@ -1,4 +1,4 @@
-import { Container, Header, UserInfo, Photo, User, UserGreetings, UserName, UserWrapper } from "./styles";
+import { Container, Header, UserInfo, Photo, User, UserGreetings, UserName, UserWrapper, Icon } from "./styles";
 
 export default function Dashboard() {
   return (
@@ -13,6 +13,8 @@ export default function Dashboard() {
               <UserName>Felipe</UserName>
             </User>
           </UserInfo>
+          
+          <Icon name="power" />
         </UserWrapper>
       </Header>
     </Container>
