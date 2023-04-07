@@ -1,4 +1,4 @@
-import { Container, Header, UserInfo, Photo, User, UserGreetings, UserName, UserWrapper, Icon } from "./styles";
+import { Container, Header, UserInfo, Photo, User, UserGreetings, UserName, UserWrapper, Icon, HighlightCards } from "./styles";
 import HighlightCard from "../../components/HighlightCard";
 
 export default function Dashboard() {
@@ -14,12 +14,15 @@ export default function Dashboard() {
               <UserName>Felipe</UserName>
             </User>
           </UserInfo>
-          
+
           <Icon name="power" />
         </UserWrapper>
       </Header>
 
-      <HighlightCard />
+      <HighlightCards>
+        <HighlightCard />
+        <HighlightCard />
+      </HighlightCards>
     </Container>
   )
 }
