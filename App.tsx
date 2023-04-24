@@ -1,4 +1,4 @@
-import { StatusBar } from 'expo-status-bar';
+import { StatusBar } from 'react-native';
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { useFonts, Poppins_400Regular, Poppins_500Medium, Poppins_700Bold } from '@expo-google-fonts/poppins';
@@ -17,13 +17,16 @@ export default function App() {
   })
 
   //se as fontes nao estiverem carregadas cai aqui
-  if(!fontsLoaded){
+  if (!fontsLoaded) {
     return <AppLoading />
   }
 
   return (
     <ThemeProvider theme={theme}>
-      <StatusBar style="auto" />
+      <StatusBar
+        barStyle='light-content'
+        backgroundColor={theme.colors.primary}
+      />
       <Dashboard />
     </ThemeProvider>
   );

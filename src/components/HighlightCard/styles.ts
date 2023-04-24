@@ -7,8 +7,7 @@ export const Container = styled.View`
 
   width: ${RFValue(300)}px;
   border-radius: 5px;
-  margin-right: 16px;
-  height: 300px;
+  margin-right: 16px;  
 
   padding: 19px 23px;
   padding-bottom: ${RFValue(42)}px;
