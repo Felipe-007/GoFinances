@@ -1,5 +1,7 @@
-import { Container, Header, UserInfo, Photo, User, UserGreetings, UserName, UserWrapper, Icon, HighlightCards } from "./styles";
+//pagina principal com os dados do usuário
+import { Container, Header, UserInfo, Photo, User, UserGreetings, UserName, UserWrapper, Icon, HighlightCards, Transactions, Title } from "./styles";
 import HighlightCard from "../../components/HighlightCard";
+import TransactionCard from "../../components/TransactionCard";
 
 export default function Dashboard() {
   return (
@@ -28,6 +30,11 @@ export default function Dashboard() {
       
         <HighlightCard title="Total" amount="R$ 16.141,00" lastTransaction="01 à 16 de abril" type="total" />
       </HighlightCards>
+
+      <Transactions>
+        <Title>Listagem</Title>
+        <TransactionCard />
+      </Transactions>      
     </Container>
   )
 }
