@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import { useFonts, Poppins_400Regular, Poppins_500Medium, Poppins_700Bold } from '@expo-google-fonts/poppins';
 import AppLoading from 'expo-app-loading';  //tela de loading
 
-import Dashboard from './src/screens/Dashboard';
+import { Dashboard } from './src/screens/Dashboard';
 import theme from './src/global/styles/theme';
 
 export default function App() {
