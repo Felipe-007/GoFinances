@@ -10,6 +10,7 @@ interface Category {
 //define os tipos
 interface Props {
   data: {
+    type: 'positive' | 'negative';
     title: string;
     amount: string;
     category: Category;  //vem do interface Category
@@ -24,13 +25,16 @@ export default function TransactionCard({ data }: Props) {
         {data.title}
       </Title>
 
-      <Amount>
-        {data.amount}
+      <Amount type={data.type}>
+        {  //apresenta o - para os negativos
+          data.type === 'negative' && '- '
+        }
+        { data.amount }
       </Amount>
 
       <Footer>
         <Category>
-          <Icon name="dollar-sign" />
+          <Icon name={data.category.icon} />
           <CategoryName>
             {data.category.name}
           </CategoryName>
