@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import { useFonts, Poppins_400Regular, Poppins_500Medium, Poppins_700Bold } from '@expo-google-fonts/poppins';
 import AppLoading from 'expo-app-loading';  //tela de loading
 
-import { Dashboard } from './src/screens/Dashboard';
+import { Register } from './src/screens/Register';
 import theme from './src/global/styles/theme';
 
 export default function App() {
@@ -27,7 +27,7 @@ export default function App() {
         barStyle='light-content'
         backgroundColor={theme.colors.primary}
       />
-      <Dashboard />
+      <Register />
     </ThemeProvider>
   );
 }
